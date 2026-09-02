@@ -41,12 +41,11 @@ git push -u origin main
 ```bash
 cd ~/rh-crypto-bot
 UID_=$(id -u)
-sed -e "s#__REPO__#$PWD#g" -e "s#__SITE_DIR__#$HOME/rh-bot-monitor#g" \
-    deploy/com.rhcryptobot.publish.plist.template \
+sed "s#__REPO__#$PWD#g" deploy/com.rhcryptobot.publish.plist.template \
     > ~/Library/LaunchAgents/com.rhcryptobot.publish.plist
 launchctl bootstrap gui/$UID_ ~/Library/LaunchAgents/com.rhcryptobot.publish.plist
 launchctl kickstart -k gui/$UID_/com.rhcryptobot.publish
-tail -f ~/rh-crypto-bot/logs/publish.out     # should log "pushed + purged" every 2 min
+tail -f ~/rh-crypto-bot/logs/publish.out     # should log "pushed (...)" every 2 min
 ```
 
 That's it. The page now updates itself; nothing to touch.
