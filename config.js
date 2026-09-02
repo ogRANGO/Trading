@@ -1,1 +1,1 @@
-window.__DATA_URL__ = "https://cdn.jsdelivr.net/gh/ogRANGO/Trading@data/status.json";
+window.__DATA_URL__ = "https://cdn.jsdelivr.net/gh/ogRANGO/Trading@main/status.json";
