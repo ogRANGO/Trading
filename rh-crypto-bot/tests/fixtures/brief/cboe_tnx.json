@@ -1,0 +1,29 @@
+{
+ "timestamp": "2026-09-02 16:40:16",
+ "data": {
+  "high": 48.06,
+  "exchange_id": 115,
+  "current_price": 47.96,
+  "close": 47.96,
+  "iv30_change_percent": 0,
+  "prev_day_close": 47.96,
+  "open": 47.76,
+  "security_type": "index",
+  "low": 47.68,
+  "ask_size": 0,
+  "symbol": "^TNX",
+  "index": "TNX",
+  "bid_size": 0,
+  "iv30_change": 0.0,
+  "iv30": 0.0,
+  "seqno": 114003,
+  "bid": 0.0,
+  "volume": 0,
+  "ask": 0.0,
+  "tick": "",
+  "price_change_percent": 0.0,
+  "price_change": 0.0,
+  "last_trade_time": "2026-09-02T11:40:03.602000-05:00"
+ },
+ "symbol": "_TNX"
+}

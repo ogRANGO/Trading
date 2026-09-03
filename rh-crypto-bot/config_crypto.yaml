@@ -1,0 +1,113 @@
+# Second-instance config for the crypto / memecoin bot.
+# Used only when CONFIG_PATH=config_crypto.yaml (the stock bot keeps config.yaml).
+# Goal: chase little momentum pumps on memecoins, take small quick profits.
+
+universes:
+  crypto_memes:
+    - DOGE-USD
+    - SHIB-USD
+    - PEPE-USD
+    - BONK-USD
+    - WIF-USD
+    - TRUMP-USD
+  crypto_major:
+    - BTC-USD
+    - ETH-USD
+    - SOL-USD
+    - XRP-USD
+    - DOGE-USD
+
+active_universe: crypto_memes
+
+market_data:
+  timeframe: "15Min"
+  quote_poll_seconds: 15
+  history_days: 40
+
+strategy:
+  signal_family: mean_reversion  # buy any oversold meme (HIGH-ACTIVITY override in signals.py); trend sat flat
+  params:
+    ema_fast: 5
+    ema_slow: 13
+    macd_fast: 8
+    macd_slow: 17
+    macd_signal: 6
+    adx_period: 14
+    adx_min: 5.0
+    bb_period: 20
+    bb_std: 1.5                   # tighter bands => a mild dip counts as oversold
+    rsi_period: 14
+    rsi_buy: 48.0                 # was 35 — memecoins whip fast, don't wait for deep oversold
+    rsi_exit: 55.0
+    zscore_period: 20
+    zscore_entry: -1.5
+    atr_period: 14
+
+portfolio:
+  max_positions: 6
+  risk_fraction: 0.02
+  max_position_weight: 0.30
+  min_notional_usd: 1.0
+  exit:
+    hard_stop_atr_mult: 1.5
+    target_atr_mult: 1.2
+    trail_atr_mult: 1.8
+    time_stop_bars: 6
+  exit_profiles:
+    trend:                       # "little pump": small quick target, tight trail, bail fast
+      hard_stop_atr_mult: 1.5
+      target_atr_mult: 1.2
+      trail_atr_mult: 1.8
+      time_stop_bars: 6
+    mean_reversion:
+      hard_stop_atr_mult: 2.0
+      target_atr_mult: 1.5
+      trail_atr_mult: 0.0
+      time_stop_bars: 8
+    smc:
+      hard_stop_atr_mult: 1.5       # fallback only; the OB wick is the real stop
+      target_atr_mult: 0.0
+      trail_atr_mult: 0.0
+      time_stop_bars: 16
+      flat_by_et: null              # crypto trades 24/7 — there is no bell
+      entry_cutoff_et: null
+      tp1_fraction: 0.25
+      be_after_tp1: true
+
+fees:
+  commission_pct: 0.0
+  commission_min_usd: 0.0
+  slippage_pct: 0.001
+  crypto_spread_pct: 0.003        # memecoins cost more to trade
+
+risk:
+  max_concurrent_positions: 6
+  max_total_exposure_pct: 0.90
+  daily_loss_limit_pct: 0.20
+  max_drawdown_pct: 0.50
+  consecutive_loss_limit: 40
+  cooldown_minutes: 15
+  anomaly_move_pct: 0.35         # memecoins move violently — don't false-trip
+  max_spread_pct: 0.03
+  stale_quote_seconds: 300
+  max_orders_per_hour: 80
+  equities_rth_only: false
+  pdt_min_equity_usd: 0.0
+  pdt_max_day_trades: 9999
+  kill_below_deposit: false
+  kill_floor_pct: -0.05
+  kill_floor_confirm_ticks: 3
+
+engine:
+  strategy_tick_seconds: 60
+  advisor_tick_minutes: 120
+  reconcile_tick_minutes: 5
+  watchdog_stall_seconds: 900
+  watchdog_check_seconds: 30
+  tick_fail_streak_notify: 3
+  tick_fail_streak_halt: 20
+  events_retention_days: 30
+  quotes_retention_days: 7
+  housekeeping_utc_hour: 8
+  daily_summary_utc_hour: 13
+  engine_mode: single

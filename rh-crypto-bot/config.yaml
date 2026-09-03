@@ -1,0 +1,146 @@
+# Bot configuration. Non-secret knobs here; secrets in .env.
+
+universes:
+  tech_equity:
+    - SMH
+    - SOXX
+    - QQQ
+    - NVDA
+    - AMD
+    - MU
+    - PANW
+    - SNOW
+    - AAPL
+    - MSFT
+  crypto_major:
+    - BTC-USD
+    - ETH-USD
+    - SOL-USD
+    - DOGE-USD
+    - LTC-USD
+
+active_universe: tech_equity        # crypto_major | tech_equity  (equities need an Alpaca key)
+
+market_data:
+  timeframe: "15Min"                 # HIGH-ACTIVITY MODE — 26 bars/day, many small trades (churns, expect drift)
+  quote_poll_seconds: 15
+  history_days: 45                   # 45d of 15Min bars ~= 1170 — plenty for EMA30, fast startup
+
+strategy:
+  signal_family: mean_reversion    # HIGH-ACTIVITY: buy oversold dips (fires in the current red market)
+  params:
+    ema_fast: 9
+    ema_slow: 21
+    macd_fast: 12
+    macd_slow: 26
+    macd_signal: 9
+    adx_period: 14
+    adx_min: 8.0
+    bb_period: 20
+    bb_std: 1.5                     # was 2.0 — tighter bands => more "oversold" triggers
+    rsi_period: 14
+    rsi_buy: 48.0                   # was 35 — a mild dip counts as oversold
+    rsi_exit: 55.0
+    zscore_period: 20
+    zscore_entry: -1.5
+    atr_period: 14
+
+portfolio:
+  max_positions: 8                  # was 5 — hold more names at once
+  risk_fraction: 0.015              # was 0.02 — smaller since it churns 8 names
+  max_position_weight: 0.30
+  min_notional_usd: 1.0
+  # exit_profiles are chosen by signal family; `exit` is the fallback.
+  exit:
+    hard_stop_atr_mult: 4.0
+    target_atr_mult: 0.0
+    trail_atr_mult: 6.0
+    time_stop_bars: 0
+  exit_profiles:
+    trend:
+      hard_stop_atr_mult: 2.5       # was 4.0 — tighter, closes losers faster
+      target_atr_mult: 2.5          # was 0 — take a profit instead of "let it run"
+      trail_atr_mult: 3.0           # was 6.0 — tighter trail so winners close
+      time_stop_bars: 26            # was 0 — force-close after ~1 trading day
+    mean_reversion:
+      hard_stop_atr_mult: 3.0
+      target_atr_mult: 3.0          # exit near the mean
+      trail_atr_mult: 0.0
+      time_stop_bars: 15
+    smc:
+      # SMC sizes and stops off the order block, not ATR multiples — the ATR
+      # numbers here are only the fallback if a row arrives without a stop.
+      hard_stop_atr_mult: 2.0
+      target_atr_mult: 0.0          # structure target comes from the signal
+      trail_atr_mult: 0.0
+      time_stop_bars: 16            # 4h on 15Min
+      flat_by_et: "15:55"           # intraday only: nothing held overnight
+      entry_cutoff_et: "15:15"      # no new risk into the close
+      tp1_fraction: 0.25            # close a quarter at the first opposing OB
+      be_after_tp1: true            # swept in the bakeoff — not a settled default
+
+fees:
+  commission_pct: 0.0
+  commission_min_usd: 0.0
+  slippage_pct: 0.0005
+  crypto_spread_pct: 0.0020
+
+risk:
+  max_concurrent_positions: 8      # match portfolio.max_positions
+  max_total_exposure_pct: 0.90
+  daily_loss_limit_pct: 0.12        # loosened — user wants it aggressive, accepts big swings
+  max_drawdown_pct: 0.35            # backtest at 2%/trade shows ~-23% DD; don't halt before then
+  consecutive_loss_limit: 30        # high-activity mode churns many small trades — don't halt on a losing run
+  cooldown_minutes: 15             # was 120 — re-enter a name quickly
+  anomaly_move_pct: 0.20
+  max_spread_pct: 0.01
+  stale_quote_seconds: 300
+  max_orders_per_hour: 60          # was 20 — 8 names on 15Min bars need headroom
+  equities_rth_only: true
+  pdt_min_equity_usd: 0.0           # was 25000 — don't PDT-block a small paper account
+  pdt_max_day_trades: 9999         # was 3 — high-activity mode day-trades constantly (paper only)
+  # Permanent kill-on-loss: flatten + DEAD marker + disable launchd, when equity
+  # falls to/through (1 + kill_floor_pct) x deposit for kill_floor_confirm_ticks.
+  kill_below_deposit: false         # DISABLED per user — the bot will not auto-flatten/self-disable on loss
+  kill_floor_pct: -0.05             # 0.0 = at deposit; -0.05 = 5% loss budget
+  kill_floor_confirm_ticks: 3
+
+engine:
+  strategy_tick_seconds: 60
+  advisor_tick_minutes: 120        # Phase 3 LLM advisor - not yet consumed
+  reconcile_tick_minutes: 5        # periodic broker<->DB reconcile
+  # Phase 5 unattended hardening
+  watchdog_stall_seconds: 600      # no tick progress this long -> os._exit, launchd restarts
+  watchdog_check_seconds: 30
+  tick_fail_streak_notify: 3
+  tick_fail_streak_halt: 10
+  events_retention_days: 90
+  quotes_retention_days: 7
+  housekeeping_utc_hour: 8         # daily prune + WAL checkpoint (UTC)
+  daily_summary_utc_hour: 13       # daily P&L digest push (UTC)
+  # Phase 7 multi-agent trading floor
+  engine_mode: single            # bakeoff: multi made ~4 trades in 3y; single-family trend is the edge
+
+# --- Phase 7: the trading floor ---
+# Each agent keeps its own shadow P&L. The coordinator blends the enabled agents
+# into one book. An agent whose shadow book falls to/through
+# stake_usd*(1+kill_floor_pct) after >= min_trades is permanently disabled
+# (data/agents/<id>.DEAD) and dropped -- revive with scripts/launchd.sh revive-agent.
+agents:
+  trend:          {enabled: true,  weight: 1.0, asset_classes: [equity, crypto]}
+  mean_reversion: {enabled: true,  weight: 0.8, asset_classes: [equity, crypto]}
+  momentum:       {enabled: true,  weight: 0.8, asset_classes: [equity, crypto]}
+  vol_regime:     {enabled: true,  weight: 0.6, asset_classes: [equity, crypto]}   # veto only
+  news:           {enabled: true,  weight: 0.4, asset_classes: [equity, crypto], poll_minutes: 60, engine: lexicon}
+  flow:           {enabled: false, weight: 0.3, asset_classes: [crypto], poll_minutes: 15}
+
+coordinator:                        # only used when engine_mode: multi (currently single)
+  min_agents_agree: 2
+  min_net_conviction: 0.35
+  veto_conviction: 0.6
+
+agent_kill:
+  stake_usd: 1000
+  kill_floor_pct: -0.15            # disable at 85% of the stake
+  confirm_ticks: 3
+  min_trades: 10

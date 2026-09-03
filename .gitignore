@@ -1,5 +1,25 @@
+# ── monorepo root ignores ──────────────────────────────────────────
+# (rh-crypto-bot/ has its own .gitignore for the bot's data/logs/venv)
+
+# OS / editor
 .DS_Store
-node_modules/
-.vercel
-.cycle
+.idea/
+.vscode/
+*.swp
+
+# tooling backups
 *.bak
+*.orig
+*.rej
+
+# monitor / status publisher
+.cycle
+.vercel
+node_modules/
+
+# never commit secrets (belt-and-braces; rh-crypto-bot/.gitignore also covers this)
+.env
+.env.*
+!.env.example
+*.pem
+*.key

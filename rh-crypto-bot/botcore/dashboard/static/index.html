@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rh-crypto-bot</title>
+<style>
+  :root {
+    --bg:#0b0e12; --panel:#131922; --panel2:#0f141c; --line:#233040;
+    --fg:#c8d0da; --dim:#7c8896; --accent:#4da3ff; --ok:#37d67a; --warn:#f0b429; --bad:#ff6b6b;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; }
+  header { display:flex; align-items:center; gap:16px; padding:14px 20px; border-bottom:1px solid var(--line); flex-wrap:wrap; }
+  header h1 { font-size:15px; margin:0; letter-spacing:.5px; }
+  .tag { font-size:11px; color:var(--dim); border:1px solid var(--line); border-radius:4px; padding:2px 7px; }
+  .spacer { flex:1; }
+  button { background:var(--panel); color:var(--fg); border:1px solid var(--line); border-radius:6px;
+           padding:7px 13px; cursor:pointer; font-size:12px; font-weight:600; }
+  button:hover { border-color:var(--accent); }
+  button.danger { border-color:#5a2530; color:#ffb3b3; }
+  button.danger:hover { background:#3a1a22; }
+  main { padding:20px; max-width:1400px; margin:0 auto; }
+  .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:14px; margin-bottom:22px; }
+  .card { background:var(--panel); border:1px solid var(--line); border-left:3px solid var(--line); border-radius:8px; padding:14px 16px; }
+  .card .lbl { font-size:10.5px; letter-spacing:1px; color:var(--dim); text-transform:uppercase; }
+  .card .val { font-size:26px; font-weight:700; margin:4px 0 2px; }
+  .card .sub { font-size:11px; color:var(--dim); }
+  .card.ok { border-left-color:var(--ok); } .card.warn { border-left-color:var(--warn); }
+  .card.bad { border-left-color:var(--bad); } .card.accent { border-left-color:var(--accent); }
+  h2 { font-size:12px; letter-spacing:.8px; text-transform:uppercase; color:var(--dim); margin:26px 0 10px; }
+  .wrap { overflow-x:auto; border:1px solid var(--line); border-radius:8px; background:var(--panel2); }
+  table { border-collapse:collapse; width:100%; font-size:12.5px; }
+  th,td { text-align:right; padding:7px 11px; white-space:nowrap; border-bottom:1px solid var(--line); }
+  th { color:var(--dim); font-weight:600; font-size:10.5px; letter-spacing:.6px; text-transform:uppercase; position:sticky; top:0; background:var(--panel2); }
+  td:first-child, th:first-child { text-align:left; }
+  tr:last-child td { border-bottom:none; }
+  .pos { color:var(--ok); } .neg { color:var(--bad); }
+  .pill { font-size:10px; padding:2px 6px; border-radius:4px; border:1px solid var(--line); }
+  .pill.OK { color:var(--ok); border-color:#1e4a34; }
+  .pill.MISSING_STOP,.pill.INVALID,.pill.NO_PLAN { color:var(--warn); border-color:#4a3c14; }
+  svg { display:block; width:100%; height:180px; }
+  .muted { color:var(--dim); }
+  .flash { animation:flash .6s; } @keyframes flash { from{background:#1c2a1f;} to{background:transparent;} }
+  #err { color:var(--bad); font-size:12px; padding:8px 20px; display:none; }
+  #dead { display:none; background:#3a1414; color:#ffd7d7; border-top:2px solid var(--bad);
+          border-bottom:2px solid var(--bad); padding:12px 20px; font-size:13px; }
+  #dead b { color:var(--bad); letter-spacing:.5px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>rh-crypto-bot</h1>
+  <span class="tag" id="t-mode">–</span>
+  <span class="tag" id="t-broker">–</span>
+  <span class="tag" id="t-universe">–</span>
+  <span class="tag" id="t-family">–</span>
+  <span class="spacer"></span>
+  <button id="btn-pause">Pause</button>
+  <button id="btn-resume">Resume</button>
+  <button class="danger" id="btn-flatten">Flatten &amp; Halt</button>
+  <button class="danger" id="btn-clear">Clear Halt</button>
+</header>
+<div id="err"></div>
+<div id="dead"></div>
+
+<main>
+  <div class="cards">
+    <div class="card accent"><div class="lbl">Equity</div><div class="val" id="k-equity">–</div><div class="sub" id="k-return">–</div></div>
+    <div class="card" id="c-pos"><div class="lbl">Active Positions</div><div class="val" id="k-pos">–</div><div class="sub">Bot-managed</div></div>
+    <div class="card" id="c-issues"><div class="lbl">Exit-Plan Issues</div><div class="val" id="k-issues">–</div><div class="sub">Missing/invalid stop, target, price</div></div>
+    <div class="card" id="c-stop"><div class="lbl">Avg Stop Distance</div><div class="val" id="k-stop">–</div><div class="sub">Current stop vs entry</div></div>
+    <div class="card" id="c-state"><div class="lbl">Protective State</div><div class="val" id="k-state">–</div><div class="sub">Stops / targets / halt monitoring</div></div>
+    <div class="card" id="c-agents"><div class="lbl">Agents</div><div class="val" id="k-agents">–</div><div class="sub">active / disabled</div></div>
+  </div>
+
+  <h2>Equity curve</h2>
+  <div class="wrap" style="padding:10px;"><svg id="equity" viewBox="0 0 800 180" preserveAspectRatio="none"></svg></div>
+
+  <h2 id="h-agents" style="display:none">Agents</h2>
+  <div class="wrap" id="w-agents" style="display:none"><table id="tbl-agents"><thead></thead><tbody></tbody></table></div>
+
+  <h2>Active positions</h2>
+  <div class="wrap"><table id="tbl-pos"><thead></thead><tbody></tbody></table></div>
+
+  <h2>Recent fills &amp; order ledger</h2>
+  <div class="wrap"><table id="tbl-ord"><thead></thead><tbody></tbody></table></div>
+
+  <h2>Current quote quality</h2>
+  <div class="wrap"><table id="tbl-q"><thead></thead><tbody></tbody></table></div>
+
+  <h2>Events</h2>
+  <div class="wrap"><table id="tbl-ev"><thead></thead><tbody></tbody></table></div>
+</main>
+
+<script>
+const TOKEN = new URLSearchParams(location.search).get("token") || "";
+const $ = s => document.querySelector(s);
+const money = v => v==null ? "–" : "$"+Number(v).toLocaleString(undefined,{maximumFractionDigits:2});
+const pct = v => v==null ? "–" : Number(v).toFixed(2)+"%";
+const num = (v,d=4) => v==null ? "–" : Number(v).toLocaleString(undefined,{maximumFractionDigits:d});
+const cls = v => v>0 ? "pos" : v<0 ? "neg" : "";
+
+async function api(path, method="GET") {
+  const r = await fetch(path, { method, headers: TOKEN ? {"X-Dashboard-Token":TOKEN} : {} });
+  if (!r.ok) throw new Error(path+" → "+r.status);
+  return r.json();
+}
+function showErr(m){ const e=$("#err"); e.textContent=m; e.style.display=m?"block":"none"; }
+
+function table(el, cols, rows, fmt) {
+  el.querySelector("thead").innerHTML = "<tr>"+cols.map(c=>`<th>${c}</th>`).join("")+"</tr>";
+  el.querySelector("tbody").innerHTML = rows.map(r=>"<tr>"+fmt(r).map(c=>`<td>${c}</td>`).join("")+"</tr>").join("")
+     || `<tr><td colspan="${cols.length}" class="muted">none</td></tr>`;
+}
+
+function drawEquity(pts){
+  const svg=$("#equity"); if(!pts.length){ svg.innerHTML=""; return; }
+  const xs=pts.map((_,i)=>i), ys=pts.map(p=>p.equity);
+  const lo=Math.min(...ys), hi=Math.max(...ys), pad=(hi-lo)*0.08||1;
+  const X=i=>i/(pts.length-1||1)*800, Y=v=>180-((v-lo+pad)/((hi-lo)+2*pad))*180;
+  const d=pts.map((p,i)=>(i?"L":"M")+X(i).toFixed(1)+" "+Y(p.equity).toFixed(1)).join(" ");
+  const last=ys[ys.length-1], first=ys[0], up=last>=first;
+  svg.innerHTML=`<path d="${d}" fill="none" stroke="${up?'#37d67a':'#ff6b6b'}" stroke-width="1.5"/>`+
+    `<line x1="0" x2="800" y1="${Y(first).toFixed(1)}" y2="${Y(first).toFixed(1)}" stroke="#233040" stroke-dasharray="3 3"/>`;
+}
+
+async function refresh(){
+  try{
+    const s = await api("/api/state");
+    showErr("");
+    $("#t-mode").textContent = s.mode; $("#t-broker").textContent = s.broker;
+    $("#t-universe").textContent = s.universe; $("#t-family").textContent = s.signal_family;
+    $("#k-equity").textContent = money(s.equity.now);
+    const rt=$("#k-return"); rt.textContent = pct(s.equity.return_pct); rt.className="sub "+cls(s.equity.return_pct);
+    $("#k-pos").textContent = s.kpis.active_positions;
+    $("#k-issues").textContent = s.kpis.exit_plan_issues;
+    $("#k-stop").textContent = s.kpis.avg_stop_distance_pct==null?"–":s.kpis.avg_stop_distance_pct.toFixed(1)+"%";
+    $("#k-state").textContent = s.kpis.protective_state;
+    $("#c-issues").className = "card "+(s.kpis.exit_plan_issues?"bad":"ok");
+    $("#c-state").className = "card "+({OK:"ok",ISSUES:"warn",PAUSED:"warn",HALTED:"bad",DEAD:"bad"}[s.kpis.protective_state]||"");
+
+    const multi = s.engine_mode === "multi";
+    $("#k-agents").textContent = multi ? `${s.kpis.agents_active||0} / ${s.kpis.agents_dead||0}` : "single";
+    $("#c-agents").className = "card "+(multi ? (s.kpis.agents_dead?"warn":"ok") : "");
+    $("#h-agents").style.display = multi ? "" : "none";
+    $("#w-agents").style.display = multi ? "" : "none";
+    if(multi){
+      const ag = await api("/api/agents");
+      table($("#tbl-agents"),
+        ["agent","kind","status","weight","shadow %","trades","win %","attributed $","last signal","to kill %"],
+        ag,
+        a=>[a.id, a.kind,
+            `<span class="${a.dead?'neg':(a.enabled?'pos':'muted')}">${a.dead?'DEAD':(a.enabled?'active':'off')}</span>`,
+            num(a.weight,2),
+            `<span class="${cls(a.shadow_return_pct)}">${a.shadow_return_pct}%</span>`,
+            a.shadow_trades, (a.win_rate*100).toFixed(0),
+            `<span class="${cls(a.attributed_pnl)}">${money(a.attributed_pnl)}</span>`,
+            a.last_signal ? `${a.last_signal.symbol} ${a.last_signal.direction>0?'▲':(a.last_signal.direction<0?'▼':'–')} ${a.last_signal.conviction.toFixed(2)}` : "–",
+            a.distance_to_kill_pct]);
+    }
+
+    const dd=$("#dead");
+    if(s.dead){
+      const c=s.dead_certificate||{};
+      dd.innerHTML = "<b>BOT KILLED — DEAD.</b> "+(c.reason||"lost money past the deposit floor")
+        +" &nbsp;·&nbsp; "+(c.iso||"")+" &nbsp;·&nbsp; engine will not start. "
+        +"Review logs/paper.log, then run <code>scripts/launchd.sh revive --confirm</code>.";
+      dd.style.display="block";
+    } else { dd.style.display="none"; }
+
+    table($("#tbl-pos"),
+      ["ticker","status","shares","entry","current","stop","target","trail","stop %","P&L %","exit_plan","issues","reason","updated"],
+      s.positions,
+      p=>[p.ticker,p.status,num(p.shares,6),num(p.entry_price),num(p.current_price),
+          num(p.stop_price),num(p.target_price),num(p.trailing_stop_price),
+          p.stop_distance_pct==null?"–":p.stop_distance_pct+"%",
+          `<span class="${cls(p.unrealized_pct)}">${p.unrealized_pct}%</span>`,
+          `<span class="pill ${p.exit_plan_status}">${p.exit_plan_status}</span>`,
+          `<span class="muted">${p.issues||""}</span>`,
+          `<span class="muted">${p.reason||""}</span>`, p.updated_at||""]);
+
+    const ords = await api("/api/orders?limit=40");
+    table($("#tbl-ord"),
+      ["symbol","side","role","type","status","qty","avg_price","fee","strategy","created"],
+      ords,
+      o=>[o.symbol,o.side,o.role||"",o.type,o.status,num(o.asset_quantity,6),
+          num(o.average_price),num(o.fee,2),o.strategy||"",fmtTs(o.created_ts)]);
+
+    const qs = await api("/api/quotes");
+    table($("#tbl-q"), ["symbol","bid","ask","mid","spread %","age (s)"], qs,
+      q=>[q.symbol,num(q.bid),num(q.ask),num(q.mid),q.spread_pct==null?"–":q.spread_pct,q.age_s]);
+
+    const ev = await api("/api/events?limit=40");
+    table($("#tbl-ev"), ["time","level","kind","message"], ev,
+      e=>[fmtTs(e.ts),`<span class="${e.level==='error'||e.level==='halt'?'neg':''}">${e.level}</span>`,e.kind,
+          `<span class="muted">${escapeHtml(e.message)}</span>`]);
+
+    drawEquity(await api("/api/equity"));
+  }catch(err){ showErr(String(err.message||err)); }
+}
+function fmtTs(t){ return t? new Date(t*1000).toLocaleString() : ""; }
+function escapeHtml(s){ return String(s).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c])); }
+
+async function ctl(path){ try{ await api(path,"POST"); flash(); refresh(); }catch(e){ showErr(String(e.message||e)); } }
+function flash(){ document.querySelectorAll(".card").forEach(c=>{c.classList.remove("flash");void c.offsetWidth;c.classList.add("flash");}); }
+$("#btn-pause").onclick   = ()=>ctl("/api/pause");
+$("#btn-resume").onclick  = ()=>ctl("/api/resume");
+$("#btn-flatten").onclick = ()=>{ if(confirm("Sell ALL bot positions to cash and HALT?")) ctl("/api/flatten"); };
+$("#btn-clear").onclick   = ()=>{ if(confirm("Clear the HALT flag? The bot may resume trading.")) ctl("/api/clear-halt"); };
+
+refresh();
+setInterval(refresh, 5000);
+</script>
+</body>
+</html>

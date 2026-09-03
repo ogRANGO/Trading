@@ -1,0 +1,77 @@
+{
+ "mode": "paper",
+ "broker": "alpaca",
+ "universe": "tech_equity",
+ "signal_family": "mean_reversion",
+ "paused": false,
+ "halted": false,
+ "halt_info": null,
+ "dead": false,
+ "dead_certificate": null,
+ "engine_mode": "single",
+ "kpis": {
+  "active_positions": 3,
+  "exit_plan_issues": 0,
+  "avg_stop_distance_pct": 1.68,
+  "protective_state": "OK"
+ },
+ "equity": {
+  "now": 102061.76,
+  "start": 100000.0,
+  "return_pct": 2.06
+ },
+ "positions": [
+  {
+   "ticker": "MSFT",
+   "status": "OPEN",
+   "shares": 61.799,
+   "entry_price": 497.899029,
+   "current_price": 494.015,
+   "stop_price": 493.5120932215178,
+   "target_price": 502.3879067784822,
+   "trailing_stop_price": null,
+   "stop_distance_pct": 0.1,
+   "exit_plan_status": "OK",
+   "issues": "",
+   "unrealized_pct": -0.78,
+   "strategy": "mean_reversion",
+   "reason": "PortfolioCfg: score=1.75",
+   "updated_at": "2026-09-02 09:42:41"
+  },
+  {
+   "ticker": "SNOW",
+   "status": "OPEN",
+   "shares": 99.683,
+   "entry_price": 305.84,
+   "current_price": 306.6,
+   "stop_price": 299.79077509226295,
+   "target_price": 315.20922490773705,
+   "trailing_stop_price": null,
+   "stop_distance_pct": 2.22,
+   "exit_plan_status": "OK",
+   "issues": "",
+   "unrealized_pct": 0.25,
+   "strategy": "mean_reversion",
+   "reason": "PortfolioCfg: score=3.21",
+   "updated_at": "2026-09-02 09:42:41"
+  },
+  {
+   "ticker": "PANW",
+   "status": "OPEN",
+   "shares": 93.629,
+   "entry_price": 324.82,
+   "current_price": 323.16499999999996,
+   "stop_price": 314.3973687534331,
+   "target_price": 335.40263124656684,
+   "trailing_stop_price": null,
+   "stop_distance_pct": 2.71,
+   "exit_plan_status": "OK",
+   "issues": "",
+   "unrealized_pct": -0.51,
+   "strategy": "",
+   "reason": "adopted-on-boot",
+   "updated_at": "2026-09-02 09:42:41"
+  }
+ ],
+ "server_ts": 1788367388.947642
+}

@@ -1,0 +1,95 @@
+# Pre-market brief bot — non-secret knobs. Secrets (FINNHUB_KEY) live in .env.
+# Phase 6 retunes the weights/caps from measured hit-rates in data/brief.db.
+
+# --- what the tape lane shows -----------------------------------------------
+# Yahoo's chart API is rate-limited without notice, so the tape is built from
+# providers that actually answer: Alpaca (pre-market ETF proxies + crypto),
+# CBOE delayed-quote cdn (vol + rates + index levels). Yahoo futures/intl are
+# a best-effort bonus. label | provider | symbol
+tape:
+  # Alpaca equity ETF proxies — these DO move in pre-market (from 04:00 ET)
+  alpaca_etf:
+    - ["S&P 500 (SPY)",   "SPY"]
+    - ["Nasdaq 100 (QQQ)", "QQQ"]
+    - ["Russell 2000 (IWM)", "IWM"]
+    - ["Gold (GLD)",      "GLD"]
+    - ["Crude (USO)",     "USO"]
+    - ["Dollar (UUP)",    "UUP"]
+    - ["20y+ Tsy (TLT)",  "TLT"]
+    - ["Semis (SMH)",     "SMH"]
+  alpaca_crypto:
+    - ["Bitcoin",  "BTC/USD"]
+    - ["Ether",    "ETH/USD"]
+  # CBOE cdn — 15-min delayed, frozen outside RTH (shown as "prior close")
+  cboe:
+    - ["VIX",           "_VIX"]
+    - ["VVIX",          "_VVIX"]
+    - ["US 10y yield",  "_TNX"]   # value is yield x10
+  # Yahoo — try, don't depend. 24h futures + international closes.
+  yahoo_bonus:
+    - ["S&P fut",   "ES=F"]
+    - ["Nasdaq fut", "NQ=F"]
+    - ["Nikkei",    "^N225"]
+    - ["Hang Seng", "^HSI"]
+    - ["DAX",       "^GDAXI"]
+    - ["FTSE 100",  "^FTSE"]
+
+# --- proximity tiers ------------------------------------------------------
+# T0 = open positions (resolved at runtime from :8787/:8788 /api/state)
+# T1 = active universe (resolved from config.yaml + config_crypto.yaml)
+# T2 = sector / benchmark read-through
+# T3 = everything else (macro, tape)
+tier2_symbols: [SPY, IWM, SMH, SOXX, XLK, DIA]
+
+# --- WHAT MATTERS priority function -------------------------------------
+score:
+  tier_weight:      { 0: 100, 1: 60, 2: 25, 3: 10 }
+  held_earnings_today:   80
+  high_impact_econ_today: 70
+  t01_material_8k:        60
+  gap_saturation_pct:      3.0   # |gap%| that maxes the 0..50 gap term
+  gap_weight:             50
+  echo_log2_weight:       15
+  stale_penalty:          30
+  stale_after_hours:       6
+
+# --- dedupe ------------------------------------------------------------
+dedupe:
+  strong_sim:       0.80   # merge on title similarity alone
+  weak_sim:         0.62   # merge only if same entity AND close in time
+  weak_window_min:  90
+
+# --- per-lane hard caps (rendered items; over-cap items still logged) --
+caps:
+  what_matters:  5
+  scheduled:     6
+  filings:       4
+  headlines:     8
+  watchlist:     4
+  tail_risk:     2
+  crypto_headlines: 3
+
+# --- filing filters --------------------------------------------------
+filings:
+  keep_8k_items: ["1.01", "1.02", "2.02", "4.01", "5.02", "7.01", "8.01"]
+  form4_min_usd: 250000
+  form4_titled_only: true   # officers / directors only
+  form4_always_keep_open_market_buys: true
+
+# --- headline handling ----------------------------------------------
+headlines:
+  lookback_hours_overnight: 20     # ~ prev session close -> 06:30 ET run
+  analyst_keywords: [upgrade, downgrade, "price target", initiates, "initiated", reiterates, "cut to", "raised to", outperform, underperform]
+  tail_keywords: [war, missile, strike, sanction, tariff, "export control", OPEC, shutdown, "debt ceiling", coup, invasion, ceasefire, hurricane, earthquake, "cyberattack"]
+
+# --- output paths (relative to $HOME unless absolute) --------------
+paths:
+  markdown_dir: "Documents/Claude/daily briefing"
+  full_json:    "rh-crypto-bot/data/brief_latest.json"
+  web_json:     "rh-bot-monitor/brief.json"
+  db:           "rh-crypto-bot/data/brief.db"
+
+# --- bot dashboards ------------------------------------------------
+bots:
+  - { name: stock, port: 8787 }
+  - { name: meme,  port: 8788 }

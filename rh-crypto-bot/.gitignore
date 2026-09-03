@@ -1,0 +1,41 @@
+# Secrets & keys — never commit
+.env
+.env.*
+!.env.example
+keys/
+secrets/
+*.pem
+*.key
+
+# Local data
+data/
+*.db
+*.db-wal
+*.db-shm
+*.sqlite3
+*.log
+logs/
+
+# Rendered launchd plists (machine-specific; templates are tracked)
+deploy/*.plist
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+build/
+dist/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# editor / tooling backups
+*.bak
+*.orig
+*.rej

@@ -1,0 +1,1475 @@
+{
+ "news": [
+  {
+   "author": "Daragh Thomas",
+   "content": "",
+   "created_at": "2026-09-02T15:32:14Z",
+   "headline": "Nvidia Nears $14 Billion Hugging Face Deal After Earlier Rejection",
+   "id": 61580507,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/West-Bangal--India---July-5--2023--Huggi.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/West-Bangal--India---July-5--2023--Huggi.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/West-Bangal--India---July-5--2023--Huggi.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "Nvidia is nearing a $14 billion Hugging Face deal after the AI startup once rejected its investment to preserve its independence.",
+   "symbols": [
+    "NVDA"
+   ],
+   "updated_at": "2026-09-02T15:32:14Z",
+   "url": "https://www.benzinga.com/markets/prediction-markets/26/09/61580507/nvidia-hugging-face-14-billion-deal"
+  },
+  {
+   "author": "Piero Cingari",
+   "content": "",
+   "created_at": "2026-09-02T15:24:05Z",
+   "headline": "The S&P 500 Got Cheaper While It Rallied. Here's What Bond Bears Are Missing",
+   "id": 61580224,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/New-York-City--Usa---June-12--2023-Charg.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/New-York-City--Usa---June-12--2023-Charg.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/New-York-City--Usa---June-12--2023-Charg.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "S&amp;P 500 earnings grew 52% in the second quarter while Treasury yields rose past 5%. Why bond yields matter less than the market thinks.",
+   "symbols": [
+    "AMZN",
+    "GOOGL",
+    "MU",
+    "NVDA",
+    "SPY"
+   ],
+   "updated_at": "2026-09-02T15:24:05Z",
+   "url": "https://www.benzinga.com/markets/large-cap/26/09/61580224/sp500-earnings-growth-bond-yields-debt-myth"
+  },
+  {
+   "author": "Daragh Thomas",
+   "content": "",
+   "created_at": "2026-09-02T14:42:36Z",
+   "headline": "BlackRock: AI Boom Still in Phase 1 as Amazon, Google, Microsoft Fuel 'Massive Build-Out'",
+   "id": 61578412,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/BlackRock.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/BlackRock.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/BlackRock.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "BlackRock\u2019s Wei Li says AI is still in Phase 1 despite nearly $600 billion in Big Tech spending, with adoption and productivity still ahead.",
+   "symbols": [
+    "AMZN",
+    "BLK",
+    "GOOGL",
+    "MSFT",
+    "NVDA"
+   ],
+   "updated_at": "2026-09-02T14:42:36Z",
+   "url": "https://www.benzinga.com/markets/prediction-markets/26/09/61578412/blackrock-ai-boom-phase-1-big-tech"
+  },
+  {
+   "author": "Chris Katje",
+   "content": "",
+   "created_at": "2026-09-02T14:37:23Z",
+   "headline": "EXCLUSIVE: Top 12 Most-Searched Tickers in August on Benzinga Pro \u2013 SpaceX, Nebius Climb, Palantir Returns",
+   "id": 61578191,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/Paris--France---March-4--2026-The-Logo-O.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/Paris--France---March-4--2026-The-Logo-O.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/Paris--France---March-4--2026-The-Logo-O.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "A look at the most-searched stock tickers on Benzinga Pro for the month of August. The leaderboard saw Palantir back in the top 12.",
+   "symbols": [
+    "AAPL",
+    "AMD",
+    "MRVL",
+    "MU",
+    "NBIS",
+    "NVDA",
+    "PLTR",
+    "QQQ",
+    "SNDK",
+    "SPCX",
+    "SPY",
+    "TSLA"
+   ],
+   "updated_at": "2026-09-02T14:37:23Z",
+   "url": "https://www.benzinga.com/trading-ideas/long-ideas/26/09/61578191/top-12-most-searched-tickers-in-august-on-benzinga-pro-spacex-nebius-climb-up-list-palantir-rejoins-leaderboard"
+  },
+  {
+   "author": "Benzinga Newsdesk",
+   "content": "",
+   "created_at": "2026-09-02T13:26:57Z",
+   "headline": "'Nvidia\u2019s Huang Urges G20 to Speed AI Adoption as Key to Growth' - Bloomberg",
+   "id": 61574563,
+   "images": [],
+   "source": "benzinga",
+   "summary": "",
+   "symbols": [
+    "NVDA",
+    "SPY"
+   ],
+   "updated_at": "2026-09-02T13:26:57Z",
+   "url": "https://www.benzinga.com/news/26/09/61574563/nvidia-s-huang-urges-g20-speed-ai-adoption-key-growth-bloomberg"
+  },
+  {
+   "author": "Benzinga Newsdesk",
+   "content": "",
+   "created_at": "2026-09-02T12:08:50Z",
+   "headline": "CrowdStrike Expands Collaboration With OpenAI To Extend Access Of CrowdStrike Enterprise Security To Codex Agents, Roll Out GPT-5.6 Cyber To Falcon Platform",
+   "id": 61571955,
+   "images": [],
+   "source": "benzinga",
+   "summary": "",
+   "symbols": [
+    "CRWD",
+    "MSFT"
+   ],
+   "updated_at": "2026-09-02T12:08:50Z",
+   "url": "https://www.benzinga.com/news/26/09/61571955/crowdstrike-expands-collaboration-openai-extend-access-crowdstrike-enterprise-security-codex-agents-"
+  },
+  {
+   "author": "Anusuya Lahiri",
+   "content": "",
+   "created_at": "2026-09-02T12:01:14Z",
+   "headline": "Investors Are Missing Microsoft\u2019s Biggest AI Edge, Analyst Says",
+   "id": 61571637,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/New-York--Usa---July-17--2025-Microsoft-.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/New-York--Usa---July-17--2025-Microsoft-.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/New-York--Usa---July-17--2025-Microsoft-.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "BofA raises MSFT price target to $600 with a Buy rating. Discover how Microsoft leverages Copilot to orchestrate enterprise AI models.",
+   "symbols": [
+    "GOOGL",
+    "IGV",
+    "IUSG",
+    "MSFT",
+    "XLK"
+   ],
+   "updated_at": "2026-09-02T12:01:14Z",
+   "url": "https://www.benzinga.com/markets/tech/26/09/61571637/investors-are-missing-microsofts-biggest-ai-edge-analyst-says"
+  },
+  {
+   "author": "Anusuya Lahiri",
+   "content": "",
+   "created_at": "2026-09-02T11:04:43Z",
+   "headline": "What Is Going On With Micron Tech Stock on Wednesday?",
+   "id": 61570070,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/Paris--France---February-20-2026-The-Mic.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/Paris--France---February-20-2026-The-Mic.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/Paris--France---February-20-2026-The-Mic.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "Micron stock faces labor strike risks in Taiwan alongside semiconductor tariff uncertainty, even as booming AI memory demand keeps global supply tight.",
+   "symbols": [
+    "MU",
+    "NVDA",
+    "SGRT",
+    "SKHY",
+    "SPMO",
+    "SSNLF",
+    "XNTK"
+   ],
+   "updated_at": "2026-09-02T11:04:43Z",
+   "url": "https://www.benzinga.com/markets/tech/26/09/61570070/what-is-going-on-with-micron-tech-stock-on-wednesday"
+  },
+  {
+   "author": "Mohd Haider",
+   "content": "",
+   "created_at": "2026-09-02T10:08:06Z",
+   "headline": "Opera Once Helped Trigger a \u20ac561M Microsoft Fine. Now It Just Lost Its EU Antitrust Fight Over Edge",
+   "id": 61568964,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/Google-Chrome--Microsoft-Edge--Firefox--.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/Google-Chrome--Microsoft-Edge--Firefox--.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/Google-Chrome--Microsoft-Edge--Firefox--.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "Opera lost its antitrust challenge against Microsoft as an EU court upheld Edge&#39;s exemption from Digital Markets Act gatekeeper rules.",
+   "symbols": [
+    "MSFT",
+    "OPRA"
+   ],
+   "updated_at": "2026-09-02T10:08:06Z",
+   "url": "https://www.benzinga.com/markets/tech/26/09/61568964/opera-loses-antitrust-challenge-microsoft-edge-eu-court"
+  },
+  {
+   "author": "Badar Shaikh",
+   "content": "",
+   "created_at": "2026-09-02T10:03:19Z",
+   "headline": "Gary Black Warns Tesla Risks Falling Behind in the Self-Driving Race: \u2018Unsupervised Autonomy Is Becoming Table Stakes\u2019",
+   "id": 61568628,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/Indianapolis---February-28--2025-Tesla-E.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/Indianapolis---February-28--2025-Tesla-E.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/Indianapolis---February-28--2025-Tesla-E.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "Tesla risks falling behind in the self-driving race as competitors invest heavily in autonomous driving technology.",
+   "symbols": [
+    "AMZN",
+    "BIDU",
+    "GOOG",
+    "GOOGL",
+    "NVDA",
+    "SKHY",
+    "TSLA",
+    "WRD"
+   ],
+   "updated_at": "2026-09-02T10:03:19Z",
+   "url": "https://www.benzinga.com/markets/tech/26/09/61568628/gary-black-warns-tesla-risks-falling-behind-in-the-self-driving-race-unsupervised-autonomy-is-becoming-table-stakes"
+  },
+  {
+   "author": "Benzinga Insights",
+   "content": "",
+   "created_at": "2026-09-02T09:58:23Z",
+   "headline": "Comparing Microsoft With Industry Competitors In Software Industry",
+   "id": 61568520,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2025/11/06/earnings_preview_11.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2025/11/06/earnings_preview_11.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2025/11/06/earnings_preview_11.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "In the fast-paced and cutthroat world of business, conducting thorough company analysis is essential for investors and industry experts. In this article, we will undertake a comprehensive industry comparison, evaluating",
+   "symbols": [
+    "MSFT"
+   ],
+   "updated_at": "2026-09-02T09:58:23Z",
+   "url": "https://www.benzinga.com/news/26/09/61568520/comparing-microsoft-industry-competitors-software-industry"
+  },
+  {
+   "author": "Benzinga Insights",
+   "content": "",
+   "created_at": "2026-09-02T09:58:18Z",
+   "headline": "Comparative Study: NVIDIA And Industry Competitors In Semiconductors &amp; Semiconductor Equipment Industry",
+   "id": 61568519,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2025/11/06/earnings_preview_11.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2025/11/06/earnings_preview_11.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2025/11/06/earnings_preview_11.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "In today&#39;s rapidly changing and highly competitive business world, it is imperative for investors and industry observers to carefully assess companies before making investment choices. In this article, we will",
+   "symbols": [
+    "NVDA"
+   ],
+   "updated_at": "2026-09-02T09:58:18Z",
+   "url": "https://www.benzinga.com/news/26/09/61568519/comparative-study-nvidia-and-industry-competitors-semiconductors-amp-semiconductor-equipment-industr"
+  },
+  {
+   "author": "Anusuya Lahiri",
+   "content": "",
+   "created_at": "2026-09-02T09:25:23Z",
+   "headline": "Jim Cramer Calls NVIDIA \u2018Radically Cheap,\u2019 Urges Blockbuster $500 Billion Buyback",
+   "id": 61568170,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/Nvidia.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/Nvidia.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/Nvidia.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "Is NVIDIA stock underpriced? Jim Cramer and Ben Reitzes point to open AI models, physical AI, and data center financing as key catalysts.",
+   "symbols": [
+    "AAPL",
+    "FFOG",
+    "HUT",
+    "ILDR",
+    "NVDA",
+    "USNZ"
+   ],
+   "updated_at": "2026-09-02T09:25:23Z",
+   "url": "https://www.benzinga.com/markets/tech/26/09/61568170/jim-cramer-calls-nvidia-radically-cheap-urges-blockbuster-500-billion-buyback"
+  },
+  {
+   "author": "Rishabh Mishra",
+   "content": "",
+   "created_at": "2026-09-02T08:18:18Z",
+   "headline": "Jensen Huang Sees a $50 Trillion Physical AI Opportunity \u2014 Here Are 4 \u2018Picks and Shovels\u2019 Stocks That Should Be on Investors\u2019 Radar",
+   "id": 61567697,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/Jensen-Huang-Nvidias-Founder--President-.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/Jensen-Huang-Nvidias-Founder--President-.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/Jensen-Huang-Nvidias-Founder--President-.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "Jensen Huang sees a $50T robotics market. Discover how actuator stocks like MOG.A, MP, SYM, and KOID power physical AI.",
+   "symbols": [
+    "KOID",
+    "MOG",
+    "MP",
+    "NVDA",
+    "SYM",
+    "WMT"
+   ],
+   "updated_at": "2026-09-02T08:18:18Z",
+   "url": "https://www.benzinga.com/markets/equities/26/09/61567697/jensen-huang-sees-a-50-trillion-physical-ai-opportunity-here-are-4-picks-and-shovels-stocks-that-should-be-on-investors-radar"
+  },
+  {
+   "author": "Snigdha Gairola",
+   "content": "",
+   "created_at": "2026-09-02T07:42:56Z",
+   "headline": "Elizabeth Warren Slams Trump\u2019s AI Data Center Push, Says It Could Leave Americans With Higher Power Bills After President Calls Opponents 'Backwards and Poor'",
+   "id": 61567393,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/Warren-Flags-Sports-Streaming-Consolidat.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/Warren-Flags-Sports-Streaming-Consolidat.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/Warren-Flags-Sports-Streaming-Consolidat.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "Warren slammed Trump\u2019s AI data center push, warning families should not pay higher electricity bills to fuel Big Tech\u2019s AI expansion.",
+   "symbols": [
+    "NVDA"
+   ],
+   "updated_at": "2026-09-02T07:42:56Z",
+   "url": "https://www.benzinga.com/markets/tech/26/09/61567393/elizabeth-warren-slams-trumps-ai-data-center-push-says-it-could-leave-americans-with-higher-power-bills-after-president-calls-opponents-backwards-and-poor"
+  },
+  {
+   "author": "Rishabh Mishra",
+   "content": "",
+   "created_at": "2026-09-02T06:22:16Z",
+   "headline": "Stock Market: Will S&P 500 Open Up or Down Today?",
+   "id": 61567010,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/Close-Up-Of-Wall-Street-Sign-With-Iconic.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/Close-Up-Of-Wall-Street-Sign-With-Iconic.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/Close-Up-Of-Wall-Street-Sign-With-Iconic.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "Will the S&amp;P 500 open higher? Polymarket odds sit at 53% as Wall Street weighs fresh U.S.-Iran strikes, $95 oil, and ADP jobs data.",
+   "symbols": [
+    "AVGO",
+    "CRM",
+    "DIA",
+    "HPE",
+    "NVDA",
+    "POLUSD",
+    "QQQ",
+    "SNOW",
+    "SPY"
+   ],
+   "updated_at": "2026-09-02T06:22:16Z",
+   "url": "https://www.benzinga.com/markets/prediction-markets/26/09/61567010/stock-market-will-sp-500-open-up-or-down-today-29"
+  },
+  {
+   "author": "Ananya Gairola",
+   "content": "",
+   "created_at": "2026-09-02T03:18:21Z",
+   "headline": "Jim Cramer Says 'WOW' as Dell Crushes Earnings; Patrick Moorhead Says the Company Is Doing 'Exactly What It Told Investors'",
+   "id": 61566180,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/Chinas-Exports-Surge-Despite-US-Shortfal.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/Chinas-Exports-Surge-Despite-US-Shortfal.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/Chinas-Exports-Surge-Despite-US-Shortfal.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "Dell\u2019s blowout quarter drew strong analyst praise, with Jim Cramer saying \u201cWOW\u201d and one analyst comparing its growth favorably with Nvidia\u2019s.",
+   "symbols": [
+    "DELL",
+    "NVDA"
+   ],
+   "updated_at": "2026-09-02T03:18:21Z",
+   "url": "https://www.benzinga.com/markets/tech/26/09/61566180/jim-cramer-says-wow-as-dell-crushes-earnings"
+  },
+  {
+   "author": "Shivdeep Dhaliwal",
+   "content": "",
+   "created_at": "2026-09-02T02:34:09Z",
+   "headline": "Cathie Wood Sells $15.6 Million of Tempus AI Stock After Merck-Moderna Trial Win, Ark Keeps Selling AMD Shares",
+   "id": 61566098,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/Ark-Invest-Cathie-Wood.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/Ark-Invest-Cathie-Wood.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/02/Ark-Invest-Cathie-Wood.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "Ark Invest sold $15.6 million of Tempus AI and $3.4 million of AMD on Tuesday, Sept. 1, 2026.",
+   "symbols": [
+    "AMD",
+    "ARKK",
+    "ARKQ",
+    "ARKX",
+    "TEM"
+   ],
+   "updated_at": "2026-09-02T02:34:09Z",
+   "url": "https://www.benzinga.com/news/26/09/61566098/cathie-wood-sells-15-6-million-of-tempus-ai-stock-after-merck-moderna-trial-win-ark-keeps-selling-amd-shares"
+  },
+  {
+   "author": "Benzinga Newsdesk",
+   "content": "",
+   "created_at": "2026-09-01T20:05:56Z",
+   "headline": "OpenAI Announces It Implemented Even Stronger Safeguards For Astra After Hugging Face Incident; Astra's Advanced Cybersecurity Work Will Initially Be Available To Group Of Testers",
+   "id": 61561972,
+   "images": [],
+   "source": "benzinga",
+   "summary": "",
+   "symbols": [
+    "MSFT"
+   ],
+   "updated_at": "2026-09-01T20:05:56Z",
+   "url": "https://www.benzinga.com/news/26/09/61561972/openai-announces-it-implemented-even-stronger-safeguards-astra-after-hugging-face-incident-astra-s-a"
+  },
+  {
+   "author": "Chandrima Sanyal",
+   "content": "",
+   "created_at": "2026-09-01T19:16:48Z",
+   "headline": "EXCLUSIVE: DeepSeek Was Just the Start. New ETF Targets China\u2019s AI Tigers in a 'Convergence Trade'",
+   "id": 61560489,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/China-And-Us-Technology-And-Ai-Technolog.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/China-And-Us-Technology-And-Ai-Technolog.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/China-And-Us-Technology-And-Ai-Technolog.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "New ETF TGRZ targets China\u2019s AI Tigers, including Z.ai. Kevin Carter, founder of EMXETF sees a potential valuation convergence trade beyond DeepSeek.",
+   "symbols": [
+    "AMZN",
+    "GOOGL",
+    "MSFT",
+    "TGRZ"
+   ],
+   "updated_at": "2026-09-01T19:16:48Z",
+   "url": "https://www.benzinga.com/etfs/new-etfs/26/09/61560489/exclusive-deepseek-was-just-the-start-new-etf-targets-chinas-ai-tigers-in-a-convergence-trade"
+  },
+  {
+   "author": "Benzinga Newsdesk",
+   "content": "",
+   "created_at": "2026-09-01T18:13:24Z",
+   "headline": "Anthropic Announces Claude Fable 5.1 And Mythos 5.1",
+   "id": 61558444,
+   "images": [],
+   "source": "benzinga",
+   "summary": "",
+   "symbols": [
+    "AI",
+    "BABA",
+    "BBAI",
+    "BFRG",
+    "BIDU",
+    "GFAI",
+    "GOOG",
+    "GOOGL",
+    "IBM",
+    "INTC",
+    "INTU",
+    "LPSN",
+    "MARK",
+    "MCHX",
+    "META",
+    "MSFT",
+    "NVDA",
+    "QCOM",
+    "SNAP",
+    "SOUN",
+    "SSTK",
+    "TBLA",
+    "VERI"
+   ],
+   "updated_at": "2026-09-01T18:13:24Z",
+   "url": "https://www.benzinga.com/news/26/09/61558444/anthropic-announces-claude-fable-5-1-and-mythos-5-1"
+  },
+  {
+   "author": "Chris Katje",
+   "content": "",
+   "created_at": "2026-09-01T17:38:01Z",
+   "headline": "Broadcom Q3 Preview: Nvidia Record Results Bring Added Pressure \u2014 \u2018Has to Prove\u2019",
+   "id": 61557316,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Smartphone-Displays-Broadcom-Logo-Agains.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Smartphone-Displays-Broadcom-Logo-Agains.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Smartphone-Displays-Broadcom-Logo-Agains.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "Broadcom reported mixed Q2 earnings. Will the company blow away Q3 estimates and show that last quarter was a fluke?",
+   "symbols": [
+    "AVGO",
+    "NVDA",
+    "QQQ",
+    "SPY"
+   ],
+   "updated_at": "2026-09-01T17:38:01Z",
+   "url": "https://www.benzinga.com/trading-ideas/previews/26/09/61557316/broadcom-q3-preview-nvidia-record-results-bring-added-pressure-has-to-prove"
+  },
+  {
+   "author": "Benzinga Newsdesk",
+   "content": "",
+   "created_at": "2026-09-01T17:05:38Z",
+   "headline": "OpenAI Rolling Out New Electronic Health Record Integration That Brings Authorized Patient Context From Epic Into ChatGPT For Healthcare",
+   "id": 61556299,
+   "images": [],
+   "source": "benzinga",
+   "summary": "",
+   "symbols": [
+    "MSFT"
+   ],
+   "updated_at": "2026-09-01T17:05:38Z",
+   "url": "https://www.benzinga.com/news/26/09/61556299/openai-rolling-out-new-electronic-health-record-integration-brings-authorized-patient-context-epic-c"
+  },
+  {
+   "author": "The Arora Report",
+   "content": "",
+   "created_at": "2026-09-01T16:47:53Z",
+   "headline": "Long Bond Again Dips Into Danger Zone\u2014Highest Yield in Japan Since 1996\u2014AI Trade Under Pressure",
+   "id": 61555756,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Paper-With-Treasury-Bonds-On-A-Table-Wit.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Paper-With-Treasury-Bonds-On-A-Table-Wit.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Paper-With-Treasury-Bonds-On-A-Table-Wit.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "\n\n\n\nLong Bond In Danger Zone\n\n\n\nPlease click here for an enlarged chart of iShares 20+ Year Treasury Bond ETF (NASDAQ:TLT).\n\n\n\nNote the following:\n\n\n\n\nThe chart shows that TLT has dipped back into the danger",
+   "symbols": [
+    "AAPL",
+    "AMZN",
+    "BTCUSD",
+    "GOOG",
+    "META",
+    "MSFT",
+    "NVDA",
+    "QQQ",
+    "SPY",
+    "TLT",
+    "TSLA"
+   ],
+   "updated_at": "2026-09-01T16:49:36Z",
+   "url": "https://www.benzinga.com/Opinion/26/09/61555756/long-bond-again-dips-in-danger-zone-highest-yield-in-japan-since-1996-ai-trade-under-pressure"
+  },
+  {
+   "author": "Surbhi Jain",
+   "content": "",
+   "created_at": "2026-09-01T16:29:55Z",
+   "headline": "QUICK SPARK: This Startup Got AMD Chips to 80% of Nvidia's Speed at Half the Cost",
+   "id": 61555064,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Benzinga-Quick-Spark.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Benzinga-Quick-Spark.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Benzinga-Quick-Spark.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "Wafer raised $40 million to optimize AI inference on non-Nvidia chips, challenging one of Nvidia&#39;s biggest advantages: its software ecosystem.",
+   "symbols": [
+    "AMD",
+    "NVDA"
+   ],
+   "updated_at": "2026-09-01T16:29:56Z",
+   "url": "https://www.benzinga.com/trading-ideas/movers/26/09/61555064/nvidia-wafer-ai"
+  },
+  {
+   "author": "Daragh Thomas",
+   "content": "",
+   "created_at": "2026-09-01T15:57:03Z",
+   "headline": "David Booth Says Picking AI Winners Can Backfire: What About Nvidia?",
+   "id": 61553782,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Ai-The-Concept-Of-Controlling-Technology.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Ai-The-Concept-Of-Controlling-Technology.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Ai-The-Concept-Of-Controlling-Technology.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "David Booth says AI can transform the economy without today\u2019s market leaders staying on top, raising a key question for Nvidia investors",
+   "symbols": [
+    "NVDA"
+   ],
+   "updated_at": "2026-09-01T15:57:03Z",
+   "url": "https://www.benzinga.com/markets/prediction-markets/26/09/61553782/david-booth-ai-nvidia"
+  },
+  {
+   "author": "Erica Kollmann",
+   "content": "",
+   "created_at": "2026-09-01T15:48:18Z",
+   "headline": "SpaceX Stock Rockets 32% in August: Inside the Turnaround",
+   "id": 61553404,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Rocket-Launch-A-Spacex-Falcon-Heavy-Rock.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Rocket-Launch-A-Spacex-Falcon-Heavy-Rock.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Rocket-Launch-A-Spacex-Falcon-Heavy-Rock.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "SpaceX stock gains 32% in August. Here&#39;s a look back at the catalysts that contributed to the monthly gain.",
+   "symbols": [
+    "AMD",
+    "GOOG",
+    "GOOGL",
+    "NVDA",
+    "SPCX"
+   ],
+   "updated_at": "2026-09-01T15:48:18Z",
+   "url": "https://www.benzinga.com/markets/tech/26/09/61553404/spacex-stock-rockets-32-in-august-inside-the-turnaround"
+  },
+  {
+   "author": "Erica Kollmann",
+   "content": "",
+   "created_at": "2026-09-01T15:06:39Z",
+   "headline": "QUICK SPARK: Microsoft's AI Spending Pays Off With Azure Growth Set to Reach 45%",
+   "id": 61551897,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Benzinga-Quick-Spark.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Benzinga-Quick-Spark.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Benzinga-Quick-Spark.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "Bank of America reiterates Microsoft stock with a Buy rating and raises its price target from $500 to $600.",
+   "symbols": [
+    "MSFT",
+    "NVDA",
+    "PS"
+   ],
+   "updated_at": "2026-09-01T15:06:39Z",
+   "url": "https://www.benzinga.com/analyst-stock-ratings/price-target/26/09/61551897/quick-spark-microsofts-ai-spending-pays-off-with-azure-growth-set-to-reach-45"
+  },
+  {
+   "author": "Daragh Thomas",
+   "content": "",
+   "created_at": "2026-09-01T14:55:03Z",
+   "headline": "Micron\u2019s Largest Production Base Faces Strike Over 83 Months\u2019 Pay",
+   "id": 61551297,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Micron-Headquarters-In-Silicon-Valley.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Micron-Headquarters-In-Silicon-Valley.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Micron-Headquarters-In-Silicon-Valley.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "Micron workers in Taiwan threaten a strike over 83 months\u2019 pay, raising supply risks as booming AI memory demand tightens the market.",
+   "symbols": [
+    "MU",
+    "NVDA",
+    "SKHY",
+    "SSNLF"
+   ],
+   "updated_at": "2026-09-01T14:55:03Z",
+   "url": "https://www.benzinga.com/markets/prediction-markets/26/09/61551297/micron-taiwan-strike-83-months-pay"
+  },
+  {
+   "author": "Daragh Thomas",
+   "content": "",
+   "created_at": "2026-09-01T14:20:07Z",
+   "headline": "US to Tell G20: Regulate AI Less, Buy American Chips as Nvidia's Jensen Huang Joins Talks",
+   "id": 61549744,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Jensen-Huang--Nvidia-Founder-And-Ceo-And.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Jensen-Huang--Nvidia-Founder-And-Ceo-And.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Jensen-Huang--Nvidia-Founder-And-Ceo-And.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "US officials will urge G20 nations to avoid new AI regulators as Washington pushes American chips, cloud and models abroad.",
+   "symbols": [
+    "NVDA"
+   ],
+   "updated_at": "2026-09-01T14:20:07Z",
+   "url": "https://www.benzinga.com/markets/prediction-markets/26/09/61549744/g20-ai-regulation-nvidia-us"
+  },
+  {
+   "author": "Benzinga Newsdesk",
+   "content": "",
+   "created_at": "2026-09-01T14:06:27Z",
+   "headline": "B of A Securities Maintains Buy on Microsoft, Raises Price Target to $600",
+   "id": 61549046,
+   "images": [],
+   "source": "benzinga",
+   "summary": "",
+   "symbols": [
+    "MSFT"
+   ],
+   "updated_at": "2026-09-01T14:06:27Z",
+   "url": "https://www.benzinga.com/news/26/09/61549046/b-securities-maintains-buy-microsoft-raises-price-target-600"
+  },
+  {
+   "author": "Anusuya Lahiri",
+   "content": "",
+   "created_at": "2026-09-01T13:04:06Z",
+   "headline": "What's Going On With Micron Technology Stock Today?",
+   "id": 61546038,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Los-Angeles--California---24-January-202.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Los-Angeles--California---24-January-202.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Los-Angeles--California---24-January-202.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "Micron stock slipped 2% premarket as investors weighed semiconductor tariff uncertainty and broader tech weakness against booming AI memory demand.",
+   "symbols": [
+    "MU",
+    "NVDA",
+    "SGRT",
+    "SKHY",
+    "SPMO",
+    "SSNLF",
+    "XNTK"
+   ],
+   "updated_at": "2026-09-01T13:05:06Z",
+   "url": "https://www.benzinga.com/markets/tech/26/09/61546038/whats-going-with-micron-tech-stock-today"
+  },
+  {
+   "author": "Rishabh Mishra",
+   "content": "",
+   "created_at": "2026-09-01T12:47:23Z",
+   "headline": "This $13 Quantum Computing Leader Is Running Nvidia 'Playbook' to Build Its Next Big Business",
+   "id": 61545301,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Quantum-Computing-Concept-Revolutionizin.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Quantum-Computing-Concept-Revolutionizin.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Quantum-Computing-Concept-Revolutionizin.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "Just as Nvidia Corp. (NASDAQ:NVDA) leveraged video games to fund its journey to AI dominance, Infleqtion Inc. (NYSE:INFQ) is monetizing near-term quantum sensors to finance its push for a commercially useful quantum",
+   "symbols": [
+    "INFQ",
+    "NVDA"
+   ],
+   "updated_at": "2026-09-01T12:47:24Z",
+   "url": "https://www.benzinga.com/markets/equities/26/09/61545301/this-13-quantum-computing-leader-is-running-nvidia-playbook-to-build-its-next-big-business"
+  },
+  {
+   "author": "Rishabh Mishra",
+   "content": "",
+   "created_at": "2026-09-01T12:34:28Z",
+   "headline": "Stock Market Today: S&P 500, Dow, Nasdaq 100 Futures Drop After Trump Says Iran Is \u2018Totally Defeated\u2019, Brent Tops $92 \u2014 CBRS, PXS, PANW, DELL in Focus (UPDATED)",
+   "id": 61541088,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Wall-Street.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Wall-Street.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Wall-Street.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "U.S. stock futures were lower on Tuesday, as the Dow Jones, S&amp;P 500 and Nasdaq 100 indices fell, following Monday&#39;s lower close.",
+   "symbols": [
+    "AMBR",
+    "BTCUSD",
+    "CANG",
+    "CBRS",
+    "CRM",
+    "DELL",
+    "MDB",
+    "NVDA",
+    "PANW",
+    "PXS",
+    "QQQ",
+    "SPY"
+   ],
+   "updated_at": "2026-09-01T12:34:54Z",
+   "url": "https://www.benzinga.com/markets/equities/26/09/61541088/stock-market-today-sp-500-dow-futures-drop-after-trump-says-iran-is-totally-defeated-brent-tops-92-cbrs-pxs-panw-dell-in-focus"
+  },
+  {
+   "author": "Rishabh Mishra",
+   "content": "",
+   "created_at": "2026-09-01T11:22:03Z",
+   "headline": "NVDA Is Booming, But BlackRock Sounds the Alarm on a $100 Billion AI Debt Problem: Are AI Bottleneck Plays BE, VRT, MU the Next Winners?",
+   "id": 61543155,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/BlackRock.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/BlackRock.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/BlackRock.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "BlackRock warns of $100B hyperscaler debt post-Nvidia Q2 earnings, urging a pivot to AI bottleneck stocks like chips and power.",
+   "symbols": [
+    "BE",
+    "CEG",
+    "MU",
+    "NVDA",
+    "SNDK",
+    "VRT"
+   ],
+   "updated_at": "2026-09-01T11:22:03Z",
+   "url": "https://www.benzinga.com/markets/equities/26/09/61543155/nvda-is-booming-but-blackrock-sounds-the-alarm-on-a-100-billion-ai-debt-problem-are-ai-bottleneck-plays-be-vrt-mu-the-next-winners"
+  },
+  {
+   "author": "Anusuya Lahiri",
+   "content": "",
+   "created_at": "2026-09-01T10:45:13Z",
+   "headline": "NVIDIA Widens Its AI Moat With MediaTek",
+   "id": 61542310,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Bahia--Brazil---August-29--2025-Nvidia-L.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Bahia--Brazil---August-29--2025-Nvidia-L.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Bahia--Brazil---August-29--2025-Nvidia-L.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "NVIDIA partners with MediaTek, investing $3.5B to expand NVLink Fusion technology into the booming custom AI chip market.",
+   "symbols": [
+    "AVGO",
+    "NVDA"
+   ],
+   "updated_at": "2026-09-01T10:45:13Z",
+   "url": "https://www.benzinga.com/markets/tech/26/09/61542310/nvidia-widens-its-ai-moat-with-mediatek"
+  },
+  {
+   "author": "Benzinga Newsdesk",
+   "content": "",
+   "created_at": "2026-09-01T10:06:54Z",
+   "headline": "SB Energy Filed For IPO, Applied To List On Nasdaq, Nasdaq Texas Under \u2018SBE\u2019; SoftBank Group Expected To Retain Significant Stake; NVIDIA To Purchase $1.50B Of Non-Voting Equity Securities In Private Placement",
+   "id": 61541351,
+   "images": [],
+   "source": "benzinga",
+   "summary": "",
+   "symbols": [
+    "NVDA",
+    "SFTBY"
+   ],
+   "updated_at": "2026-09-01T10:06:54Z",
+   "url": "https://www.benzinga.com/quote/SFTBY"
+  },
+  {
+   "author": "Benzinga Insights",
+   "content": "",
+   "created_at": "2026-09-01T09:58:23Z",
+   "headline": "Comparing Microsoft With Industry Competitors In Software Industry",
+   "id": 61541119,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2025/11/06/earnings_preview_3.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2025/11/06/earnings_preview_3.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2025/11/06/earnings_preview_3.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "In the ever-changing and fiercely competitive business landscape, conducting thorough company analysis is crucial for investors and industry experts. In this article, we will undertake a comprehensive industry",
+   "symbols": [
+    "MSFT"
+   ],
+   "updated_at": "2026-09-01T09:58:23Z",
+   "url": "https://www.benzinga.com/news/26/09/61541119/comparing-microsoft-industry-competitors-software-industry"
+  },
+  {
+   "author": "Benzinga Insights",
+   "content": "",
+   "created_at": "2026-09-01T09:58:18Z",
+   "headline": "Understanding NVIDIA's Position In Semiconductors &amp; Semiconductor Equipment Industry Compared To Competitors",
+   "id": 61541117,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2025/11/06/earnings_preview_9.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2025/11/06/earnings_preview_9.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2025/11/06/earnings_preview_9.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "In the ever-changing and fiercely competitive business landscape, conducting thorough company analysis is crucial for investors and industry experts. In this article, we will undertake a comprehensive industry",
+   "symbols": [
+    "NVDA"
+   ],
+   "updated_at": "2026-09-01T09:58:19Z",
+   "url": "https://www.benzinga.com/news/26/09/61541117/understanding-nvidia-s-position-semiconductors-amp-semiconductor-equipment-industry-compared-competi"
+  },
+  {
+   "author": "Anusuya Lahiri",
+   "content": "",
+   "created_at": "2026-09-01T09:46:29Z",
+   "headline": "NVIDIA Moves Deeper Into Broadcom Territory \u2014 Without Building The Chip",
+   "id": 61540989,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Nvidia-Logo-On-Phone-And-Blurred-Ai-Chip.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Nvidia-Logo-On-Phone-And-Blurred-Ai-Chip.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Nvidia-Logo-On-Phone-And-Blurred-Ai-Chip.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "NVIDIA expands into custom AI chips with NVHBM, posing a threat to Broadcom\u2019s position, says Counterpoint analyst.",
+   "symbols": [
+    "AMZN",
+    "AVGO",
+    "FFOG",
+    "ILDR",
+    "MRVL",
+    "NVDA",
+    "USNZ"
+   ],
+   "updated_at": "2026-09-01T09:46:29Z",
+   "url": "https://www.benzinga.com/markets/tech/26/09/61540989/nvidia-moves-deeper-into-broadcom-territory-without-building-the-chip"
+  },
+  {
+   "author": "Anusuya Lahiri",
+   "content": "",
+   "created_at": "2026-09-01T09:30:16Z",
+   "headline": "What's Going On With Broadcom Stock Tuesday?",
+   "id": 61540924,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Broadcom.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Broadcom.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Broadcom.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "Broadcom (AVGO) slips premarket ahead of Q3 earnings. As technicals test 200-day SMA support, new VMware AI tools take center stage.",
+   "symbols": [
+    "AVGO",
+    "BABA",
+    "GOOGL",
+    "IGM",
+    "NVDA",
+    "SOXQ",
+    "SOXX"
+   ],
+   "updated_at": "2026-09-01T09:30:16Z",
+   "url": "https://www.benzinga.com/markets/tech/26/09/61540924/whats-going-on-with-broadcom-stock-tuesday-9"
+  },
+  {
+   "author": "Snigdha Gairola",
+   "content": "",
+   "created_at": "2026-09-01T09:13:24Z",
+   "headline": "Ted Cruz Warns Beijing Is Using Bot Farms to Turn Americans Against Data Centers: 'China Wants to Control Us'",
+   "id": 61540796,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Ted-Cruz.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Ted-Cruz.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Ted-Cruz.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "Cruz warns China is using 200,000 bot farms to push anti-data center propaganda and weaken U.S. AI infrastructure in a growing national security fight.",
+   "symbols": [
+    "AMD",
+    "AVGO",
+    "CRDO",
+    "MRVL",
+    "NVDA",
+    "SPCX"
+   ],
+   "updated_at": "2026-09-01T09:13:24Z",
+   "url": "https://www.benzinga.com/markets/tech/26/09/61540796/ted-cruz-warns-beijing-is-using-bot-farms-to-turn-americans-against-data-centers-china-wants-to-control-us"
+  },
+  {
+   "author": "Ananya Gairola",
+   "content": "",
+   "created_at": "2026-09-01T04:24:25Z",
+   "headline": "Nvidia's Rubin CPX Back From the Dead? Ming-Chi Kuo Says AI Chip Back With Major Redesign",
+   "id": 61539040,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Shanghai-china-nov-22nd-2025-Nvidia-Corp.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Shanghai-china-nov-22nd-2025-Nvidia-Corp.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Shanghai-china-nov-22nd-2025-Nvidia-Corp.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "Ming-Chi Kuo says Nvidia has revived its redesigned Rubin CPX AI accelerator, with production expected to begin in Q1 2027.",
+   "symbols": [
+    "NVDA"
+   ],
+   "updated_at": "2026-09-01T04:24:25Z",
+   "url": "https://www.benzinga.com/markets/tech/26/09/61539040/nvidia-rubin-cpx-revived-ming-chi-kuo-major-redesign"
+  },
+  {
+   "author": "Radhika Anilkumar Nadig",
+   "content": "",
+   "created_at": "2026-09-01T04:13:48Z",
+   "headline": "Elon Musk Noted Natural Gas Will Still Fuel Data Centers, Gene Munster Says 'Makes Sense' to Put 'New Money to Work in Power'",
+   "id": 61538985,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Paris--France---June-16--2023-Elon-Musk-.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Paris--France---June-16--2023-Elon-Musk-.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Paris--France---June-16--2023-Elon-Musk-.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "Gene Munster said the power sector is shaping up to be the next major AI investment opportunity, comparing it to Nvidia&#39;s 2023 breakout.",
+   "symbols": [
+    "AIPO",
+    "BE",
+    "CEG",
+    "DUK",
+    "GEV",
+    "NEE",
+    "NVDA",
+    "RACK",
+    "SPCX",
+    "TSLA",
+    "XLU"
+   ],
+   "updated_at": "2026-09-01T04:13:48Z",
+   "url": "https://www.benzinga.com/markets/equities/26/09/61538985/elon-musk-natural-gas-data-centers-gene-munster-power-investment"
+  },
+  {
+   "author": "Shivdeep Dhaliwal",
+   "content": "",
+   "created_at": "2026-09-01T02:55:18Z",
+   "headline": "Cathie Wood Dumps Palantir Shares Worth $26 Million, Bets on Bitcoin-Linked Block and USDC-Issuer Circle Amid Crypto Rally",
+   "id": 61538839,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Russia-Moscow-24-06-2021-Logo-Of-Financi.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Russia-Moscow-24-06-2021-Logo-Of-Financi.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Russia-Moscow-24-06-2021-Logo-Of-Financi.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "Cathie Wood sold Palantir following its earnings beat, shifting capital into Block and Circle amid a broader Bitcoin and Ethereum rally.",
+   "symbols": [
+    "AMD",
+    "ARKF",
+    "ARKK",
+    "ARKW",
+    "BTCUSD",
+    "CRCL",
+    "ETHUSD",
+    "PLTR",
+    "USDCUSD",
+    "XYZ"
+   ],
+   "updated_at": "2026-09-01T02:55:18Z",
+   "url": "https://www.benzinga.com/etfs/broad-u-s-equity-etfs/26/08/61538839/cathie-wood-dumps-palantir-shares-worth-26-million-bets-on-bitcoin-linked-block-and-usdc-issuer-circle-amid-crypto-rally"
+  },
+  {
+   "author": "Ananya Gairola",
+   "content": "",
+   "created_at": "2026-09-01T02:38:07Z",
+   "headline": "Anthropic Signs $35 Billion Cloud Agreement With Nvidia-Backed Lambda in Deal Where Chip Giant Holds the Lease: Report",
+   "id": 61538775,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Anthropic-Logo-Is-Displayed-On-The-Scree.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Anthropic-Logo-Is-Displayed-On-The-Scree.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/09/01/Anthropic-Logo-Is-Displayed-On-The-Scree.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "Anthropic has reportedly signed a $35 billion cloud deal with Nvidia-backed Lambda as it races to secure AI computing capacity.",
+   "symbols": [
+    "AMZN",
+    "BTCUSD",
+    "GOOG",
+    "GOOGL",
+    "HUT",
+    "NVDA"
+   ],
+   "updated_at": "2026-09-01T02:38:07Z",
+   "url": "https://www.benzinga.com/markets/tech/26/08/61538775/anthropic-35-billion-lambda-nvidia-cloud-agreement-lease"
+  },
+  {
+   "author": "Benzinga Newsdesk",
+   "content": "",
+   "created_at": "2026-08-31T23:53:24Z",
+   "headline": "Reuters Reported Anthropic Signed ~$35B Cloud Deal With Lambda",
+   "id": 61538111,
+   "images": [],
+   "source": "benzinga",
+   "summary": "",
+   "symbols": [
+    "AMZN",
+    "GOOG",
+    "GOOGL",
+    "MSFT",
+    "NVDA"
+   ],
+   "updated_at": "2026-08-31T23:53:24Z",
+   "url": "https://www.benzinga.com/quote/MSFT"
+  },
+  {
+   "author": "Chandrima Sanyal",
+   "content": "",
+   "created_at": "2026-08-31T20:18:08Z",
+   "headline": "Trump\u2019s Truth Social ETF Manager Is Betting Big on AI, Crypto and New ETFs",
+   "id": 61535304,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/08/31/Truth-Social-App-Logo-Seen-On-The-Smartp.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/08/31/Truth-Social-App-Logo-Seen-On-The-Smartp.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/08/31/Truth-Social-App-Logo-Seen-On-The-Smartp.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "Trump\u2019s Truth Social ETF manager is expanding into AI, crypto, and macro strategies with a new MANGOS ETF and a planned acquisition.",
+   "symbols": [
+    "FRUT",
+    "GOOGL",
+    "META",
+    "MU",
+    "NVDA",
+    "SNDK",
+    "SPCX"
+   ],
+   "updated_at": "2026-08-31T20:18:08Z",
+   "url": "https://www.benzinga.com/etfs/new-etfs/26/08/61535304/trump-truth-social-etf-manager-is-betting-big-on-ai-crypto-and-new-etfs"
+  },
+  {
+   "author": "Benzinga Newsdesk",
+   "content": "",
+   "created_at": "2026-08-31T20:14:37Z",
+   "headline": "Apple Alleges Defendant In Trade Secret Case Against OpenAI Accessed Power Converter Circuit Schematic While At OpenAI; Alleges Defendant In Trade Secret Case Against OpenAI Trained AI Agent Using Proprietary Apple Information; Apple Says New Evidence Came To Light From MacBook Computer OpenAI Provided To Apple On August 21 As Part Of Legal Proceedings; Apple Is Asking U.S. Federal Court To Expedite Discovery Proceeding In Trade Secret Case Against OpenAI",
+   "id": 61535082,
+   "images": [],
+   "source": "benzinga",
+   "summary": "",
+   "symbols": [
+    "AAPL",
+    "MSFT"
+   ],
+   "updated_at": "2026-08-31T20:14:37Z",
+   "url": "https://www.benzinga.com/news/26/08/61535082/apple-alleges-defendant-trade-secret-case-against-openai-accessed-power-converter-circuit-schematic-"
+  },
+  {
+   "author": "Caroline Ryan",
+   "content": "",
+   "created_at": "2026-08-31T20:08:47Z",
+   "headline": "OpenAI Bolsters Technical Ranks with Kairos Computer Founders",
+   "id": 61534752,
+   "images": [
+    {
+     "size": "large",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/08/31/Openai-Logo-Seen-On-The-Screen-Of-Smartp.jpg?width=2048&height=1536"
+    },
+    {
+     "size": "small",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/08/31/Openai-Logo-Seen-On-The-Screen-Of-Smartp.jpg?width=1024&height=768"
+    },
+    {
+     "size": "thumb",
+     "url": "https://cdn.benzinga.com/files/images/story/2026/08/31/Openai-Logo-Seen-On-The-Screen-Of-Smartp.jpg?width=250&height=187"
+    }
+   ],
+   "source": "benzinga",
+   "summary": "AI-agent startup Kairos Computer co-founders Samarth Patel and Manas Bam have joined OpenAI as members of its technical staff.",
+   "symbols": [
+    "MSFT",
+    "UBER"
+   ],
+   "updated_at": "2026-08-31T20:08:47Z",
+   "url": "https://www.benzinga.com/markets/private-markets/26/08/61534752/openai-bolsters-technical-ranks-with-kairos-computer-founders"
+  }
+ ]
+}
